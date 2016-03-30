@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hebut.dao.BillboardDao">
+
+	<resultMap type="Billboard" id="resultListBillboard" >  
+        <result column="boardId" property="boardId"/>  
+        <result column="title" property="title"/>  
+        <result column="detail" property="detail"/>  
+        <result column="create_time" property="create_time"/>  
+    </resultMap> 
+    
+    <select id="selectBoards"  resultMap="resultListBillboard">
+	    select * from billboard  order by boardId desc
+	</select>
+	
+	<select id="selectBoardByBoardId" parameterType="int" resultType="Billboard">
+	    select * from billboard where boardId = #{boardId}
+	</select>
+		
+    <insert id="addBoard" parameterType="Billboard">
+		insert into
+		billboard(title,detail,create_time)
+		values(#{title},#{detail},#{create_time})
+	</insert>
+	
+	<delete id="deleteBoardByBoardId"  parameterType="int">
+		delete from billboard
+		where boardId = #{boardId}	
+	</delete>
+
+</mapper>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias alias="User" type="com.hebut.entity.User" />
+		<typeAlias alias="Question" type="com.hebut.entity.Question" />
+		<typeAlias alias="Note" type="com.hebut.entity.Note" />
+		<typeAlias alias="Record" type="com.hebut.entity.Record" />
+		<typeAlias alias="Message" type="com.hebut.entity.Message" />
+		<typeAlias alias="Billboard" type="com.hebut.entity.Billboard" />
+	</typeAliases>
+</configuration>

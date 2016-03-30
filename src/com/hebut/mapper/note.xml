@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hebut.dao.NoteDao">
+
+	<resultMap type="Note" id="resultListQuestionNote" >  
+        <id column="noteId" property="noteId"/>  
+        <result column="userId" property="userId"/>  
+        <result column="questionId" property="questionId"/>  
+        <result column="answerF" property="answerF"/>  
+        <association property="question" javaType="Question">  
+	        <result column="content" property="content" />
+	        <result column="answerA" property="answerA" />
+	        <result column="answerB" property="answerB" />
+	        <result column="answerC" property="answerC" />
+	        <result column="answerD" property="answerD" />
+	        <result column="answerE" property="answerE" />
+	        <result column="answerT" property="answerT" />
+        </association>  
+    </resultMap> 
+    
+	<select id="selectSingleNotesByUserId" resultMap="resultListQuestionNote">
+	    select note.noteId,note.userId,note.questionId,note.answerF,
+		question.content,question.answerA,question.answerB,question.answerC,
+		question.answerD,question.answerE,question.answerT
+		from note,question 
+		where userId = #{0} and type='0' and note.questionId = question.questionId and subject = #{1} order by note.noteId desc;
+	</select>
+		
+	<select id="selectMultipleNotesByUserId" resultMap="resultListQuestionNote">
+	    select note.noteId,note.userId,note.questionId,note.answerF,
+		question.content,question.answerA,question.answerB,question.answerC,
+		question.answerD,question.answerE,question.answerT
+		from note,question 
+		where userId = #{0} and type='1' and note.questionId = question.questionId and subject = #{1} order by note.noteId desc;
+	</select>
+	
+    <insert id="addNote" parameterType="Note">
+		insert into
+		note(userId,questionId,answerF)
+		values(#{userId},#{questionId},#{answerF})
+	</insert>
+	
+	<delete id="deleteNote"  parameterType="int">
+		delete from note
+		where noteId = #{noteId}	
+	</delete>
+
+	<select id="selectNote" resultType="Note">
+		select  * from note
+		where userId = #{0} and questionId = #{1} 
+	</select>
+	
+</mapper>

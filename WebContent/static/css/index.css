@@ -1,0 +1,103 @@
+body {
+	background-color: #f6f8f9;
+}
+
+/* top */
+.header {
+	background: url(../img/background.jpg) no-repeat;
+}
+
+.left-header {
+	margin-top: 140px;
+	color: white;
+}
+
+.right-header {
+	color: white;
+	margin: 70px 0;
+}
+
+@media only screen and (max-width:768px) {
+	.left-header {
+		margin-top: 60px;
+	}
+
+	.left-header h2 {
+		font-size: 17px;
+		font-weight: bold;
+	}
+
+	.right-header {
+		margin: 8px 0 0 17px;
+	}
+
+	#register{
+margin: 20px 0 45px 16px;
+}
+
+}
+
+/* section */
+.container {
+	padding-top: 36px;
+}
+
+.content {
+}
+
+.content h2 {
+	font-weight: bold;
+	margin-bottom: 60px;
+}
+
+.login_register {
+	height: 280px;
+	display: table;
+}
+
+.login {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.change-register {
+	cursor: pointer;
+	float: right;
+}
+
+.change-login {
+	cursor: pointer;
+	float: right;
+}
+
+.introduction {
+	text-align: center;	/* background-color: white; */
+	padding-top: 35px;
+}
+
+.introduction h6 {
+	color: #516979;
+	font-size: 21px;
+	margin: 20px;
+}
+
+.introduction p {
+	letter-spacing: 1px;
+}
+
+/* footer */
+footer {
+	margin-top: 40px;
+	height: 60px;
+	width: 100%;
+	background-color: #213040;
+	overflow:hidden;
+}
+
+.beian {
+	display: block;
+	text-align: center;
+	height: 20px;
+	margin: 20px;
+	color: #777;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hebut.dao.QuestionDao">
+	
+	<resultMap type="Question" id="resultListQuestion">
+	    <result column="questionId" property="questionId" />
+	    <result column="type" property="type" />
+	    <result column="section" property="section" />
+	    <result column="number" property="number" />
+        <result column="content" property="content" />
+        <result column="answerA" property="answerA" />
+        <result column="answerB" property="answerB" />
+        <result column="answerC" property="answerC" />
+        <result column="answerD" property="answerD" />
+        <result column="answerE" property="answerE" />
+        <result column="answerT" property="answerT" />
+    </resultMap>
+    
+	<select id="selectQuestionById" parameterType="int" resultType="Question">
+	    select * from `question` where questionId = #{questionId}  
+	</select>
+	
+    <select id="selectSingleQuestionsByKeyword" resultMap="resultListQuestion">
+	    select * from `question` where type = '0' and subject = #{1} and
+	    (content like CONCAT('%',#{0},'%')  or answerA like CONCAT('%',#{0},'%') 
+	    or answerB like CONCAT('%',#{0},'%') or answerC like CONCAT('%',#{0},'%') 
+	    or answerD like CONCAT('%',#{0},'%')) or answerE like CONCAT('%',#{0},'%') 
+	</select>
+	
+	<select id="selectMultipleQuestionsByKeyword" resultMap="resultListQuestion">
+	    select * from `question` where type = '1' and subject = #{1} and
+	    (content like CONCAT('%',#{0},'%') or answerA like CONCAT('%',#{0},'%') 
+	    or answerB like CONCAT('%',#{0},'%') or answerC like CONCAT('%',#{0},'%') 
+	    or answerD like CONCAT('%',#{0},'%')) or answerE like CONCAT('%',#{0},'%') 
+	</select>
+    
+	<select id="selectSingleQuestions" resultMap="resultListQuestion">
+	    select * from `question` where type = '0' and subject = #{1} order by rand() limit 0,#{0} 
+	</select>
+	
+	<select id="selectMultipleQuestions" resultMap="resultListQuestion">
+	    select * from `question` where type = '1' and subject = #{1} order by rand() limit 0,#{0}
+	</select>
+	
+	<select id="selectSingleQuestionsBySection" resultMap="resultListQuestion">
+	    select * from `question` where section = #{0} and type = '0' and subject = #{1} 
+	</select>
+	
+	<select id="selectMultipleQuestionsBySection" resultMap="resultListQuestion">
+	    select * from `question` where section = #{0} and type = '1' and subject = #{1} 
+	</select>
+	
+</mapper>

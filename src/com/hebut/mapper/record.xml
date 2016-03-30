@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hebut.dao.RecordDao">
+
+	<resultMap type="Record" id="resultListExamRecord">
+		<result column="userId" property="userId" />
+		<result column="begin_time" property="begin_time" />
+		<result column="last_time" property="last_time" />
+		<result column="score" property="score" />
+		<result column="percent" property="percent" />
+	</resultMap>
+
+	<insert id="addRecord" parameterType="Record">
+		insert into
+		record(subject,userId,begin_time,last_time,score,percent)
+		values(#{subject},#{userId},#{begin_time},#{last_time},#{score},#{percent})
+	</insert>
+
+	<select id="selectRecordsByUserId" parameterType="int" resultMap="resultListExamRecord">
+		select * from record where userId = #{0} and subject = #{1} order by begin_time desc
+	</select>
+
+	<delete id="deleteRecord" parameterType="int">
+		delete from record where recordId = #{recordId}
+	</delete>
+
+</mapper>

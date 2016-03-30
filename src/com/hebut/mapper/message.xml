@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hebut.dao.MessageDao">
+
+	<resultMap type="Message" id="resultListMessage">
+        <result column="userId" property="userId" />
+        <result column="content" property="content" />
+        <result column="reply" property="reply" />
+        <result column="create_time" property="create_time" />
+    </resultMap>
+    
+    <insert id="insertMessage" parameterType="Message">
+		insert into
+		message(userId,content,reply,create_time)
+		values(#{userId},#{content},#{reply},#{create_time})
+	</insert>
+		
+	<update id="updateReply">
+		update message set 
+		reply = #{1} where messageId = #{0}
+	</update>
+	
+    <select id="selectAllMessages" resultMap="resultListMessage">
+	    select * from message order by messageId desc
+	</select>
+	
+	<select id="selectMessagesByUserId" parameterType="int" resultMap="resultListMessage">
+	    select * from message where userId = #{userId} order by create_time desc
+	</select>
+	
+</mapper>

@@ -1,0 +1,106 @@
+.main_page {
+	color: #34495E;
+	min-height: 736px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.bold-divider {
+	background-color: #CBCBCB;
+}
+
+.add_wrongQuestion {
+	display: block;
+	margin: 12px auto 4px;
+}
+
+.exam-form li p {
+	font-weight: bold;
+	margin: 0 0 4px;
+}
+
+.exam-form li label {
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+.answer {
+	margin-top: 7px;
+}
+
+.delete_questionNote {
+	display: block;
+	margin: 12px auto 4px;
+	'
+}
+
+.error-answer {
+	color: rgba(255, 0, 0, 0.66);
+}
+
+.true-answer {
+	color: rgba(0, 128, 0, 0.68);
+}
+
+.exam-form button {
+	margin: 12px auto 4px;
+	display: block;
+}
+
+.exam-form .section {
+	font-size: 20px;
+	font-weight: bold;
+	color: #34495E;
+}
+
+.answerT {
+	min-width: inherit;
+	width: 100%;
+}
+
+.answerT li a {
+	text-align: center;
+	color: rgb(229, 10, 10);
+}
+
+.auto-add{
+	text-align: center;
+}
+
+.time {
+	display: inline-block;
+	margin-left: 40px;
+	color: white;
+}
+
+.record_a {
+	color: #34495E;
+}
+
+.record_a:hover {
+	cursor: pointer;
+}
+
+.highlight {
+	color: red;
+}
+
+.modal-footer button {
+	display: inline;
+}
+
+@media only screen and (max-width:768px) {
+	.time {
+		margin-left: 4px;
+	}
+}
+
+/* 随机练习  */
+@media only screen and (max-width:768px) {
+	.random-button {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}

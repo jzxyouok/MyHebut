@@ -1,0 +1,21 @@
+textarea.advice-textarea {
+	height: 80px;
+}
+.advice-submit {
+	float: right;
+	margin-top: 10px;
+}
+.margin-top {
+	margin-top: 60px;
+}
+margin-top h3{
+	font-weight: bold;
+}
+.list-group .advice-item {
+	background-color: rgba(0, 0, 0, 0);
+	border-left: none;
+	border-right: none;
+}
+.reply{
+	color: red;
+}
