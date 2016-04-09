@@ -33,7 +33,45 @@
 								<li class="nav-parent">
 									<a>
 										<i class="fa fa-copy" aria-hidden="true"></i>
-										<span>毛概考试</span>
+										<span>马原考试</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="/exam?subject=0">
+												<span class="text">在线考试</span>
+											</a>
+										</li>
+										<li>
+											<a href="/note?subject=0">
+												<span class="text">错题纠错</span>
+											</a>
+										</li>
+										<li>
+											<a href="/notePractice?subject=0">
+												<span class="text">错题练习</span>
+											</a>
+										</li>
+										<li>
+											<a href="/randomPratice?subject=0">
+												<span class="text">随机练习</span>
+											</a>
+										</li>
+										<li>
+											<a href="/questions?subject=0">
+												<span class="text">章节练习</span>
+											</a>
+										</li>
+										<li>
+											<a href="/record?subject=0">
+												<span class="text">考试记录</span>
+											</a>
+										</li>									
+									</ul>
+								</li>				
+								<li class="nav-parent">
+									<a>
+										<i class="fa fa-copy" aria-hidden="true"></i>
+										<span>毛概考试(上)</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
@@ -71,41 +109,41 @@
 								<li class="nav-parent">
 									<a>
 										<i class="fa fa-copy" aria-hidden="true"></i>
-										<span>马原考试</span>
+										<span>毛概考试(下)</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
-											<a href="/exam?subject=0">
+											<a href="/exam?subject=2">
 												<span class="text">在线考试</span>
 											</a>
 										</li>
 										<li>
-											<a href="/note?subject=0">
+											<a href="/note?subject=2">
 												<span class="text">错题纠错</span>
 											</a>
 										</li>
 										<li>
-											<a href="/notePractice?subject=0">
+											<a href="/notePractice?subject=2">
 												<span class="text">错题练习</span>
 											</a>
 										</li>
 										<li>
-											<a href="/randomPratice?subject=0">
+											<a href="/randomPratice?subject=2">
 												<span class="text">随机练习</span>
 											</a>
 										</li>
 										<li>
-											<a href="/questions?subject=0">
+											<a href="/questions?subject=2">
 												<span class="text">章节练习</span>
 											</a>
 										</li>
 										<li>
-											<a href="/record?subject=0">
+											<a href="/record?subject=2">
 												<span class="text">考试记录</span>
 											</a>
 										</li>									
 									</ul>
-								</li>				
+								</li>
 								<c:set var="power" value="${loginedUser.power}" /> 
 								<c:if test="${power == 1}">
 									<li class="nav-parent">

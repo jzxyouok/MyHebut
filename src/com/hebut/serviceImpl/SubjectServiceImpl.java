@@ -44,8 +44,8 @@ public class SubjectServiceImpl implements SubjectService {
 			List<Question> singleQuestions = questionDao.selectSingleQuestions(40, subject);
 			return singleQuestions;
 		} else{
-			System.out.println("not exist");
-			return null;
+			List<Question> singleQuestions = questionDao.selectSingleQuestions(40, subject);
+			return singleQuestions;
 		}
 	}
 
@@ -58,8 +58,8 @@ public class SubjectServiceImpl implements SubjectService {
 			List<Question> multipleQuestions = questionDao.selectMultipleQuestions(40, subject);
 			return multipleQuestions;
 		} else{
-			System.out.println("not exist");
-			return null;
+			List<Question> multipleQuestions = questionDao.selectMultipleQuestions(40, subject);
+			return multipleQuestions;
 		}
 	}
 

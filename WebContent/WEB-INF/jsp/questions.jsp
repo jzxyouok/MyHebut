@@ -75,7 +75,8 @@
 							<li><a href="#"><i class="fa fa-file-text"></i>
 							<c:set var="subject" value="${subject}" /> 
 							<c:if test="${subject == 0}">马原</c:if>
-							<c:if test="${subject == 1}">毛概</c:if></a></li>
+							<c:if test="${subject == 1}">毛概(上)</c:if>
+							<c:if test="${subject == 2}">毛概(下)</c:if></a></li>
 							<li class="active"><i class="fa fa-smile-o"></i>题库</li>
 						</ol>
 					</div>
@@ -98,7 +99,7 @@
 						<div class="row">
 							<div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 							 	<c:forEach items="${sections}" var="section" varStatus="status">
-									<button type="button" class="btn btn-primary btn-block" onclick="javascript:window.location='/section?section=${status.count}&&subject=${subject}'">
+									<button type="button" class="btn btn-primary btn-block" onclick="javascript:window.location='/section?section=${section.key}&&subject=${subject}'">
 									${section.key}.${section.value}
 									</button>
 									<br>
