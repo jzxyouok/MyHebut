@@ -24,7 +24,7 @@ public class LoginFilter extends OncePerRequestFilter {
 		response.setContentType("text/html;charset=UTF-8");
 
 		// 不过滤的uri
-		String[] notFilter = new String[] { "/img", "/js", "/css", "/loginCheck", "/fonts", "/register", "/addUser" };
+		String[] notFilter = new String[] { "/img", "/js", "/css", "/loginCheck", "/fonts", "/register", "/addUser", "/download", "/donate"};
 
 		// 请求的uri
 		String uri = request.getRequestURI();

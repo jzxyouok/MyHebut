@@ -5,7 +5,7 @@
 				<div class="sidebar-collapse">
 					<!-- Start: Sidebar Header Logo-->
 					<div class="sidebar-header">
-						<img src="${basePath}/img/logo.png" class="img-responsive" alt="" />
+						<img src="${basePath}/img/admin.png" class="img-responsive" alt="" />
 					</div>
 					<!-- End: Sidebar Header Logo-->
 					<!-- Start: Sidebar Menu-->

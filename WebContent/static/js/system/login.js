@@ -2,6 +2,25 @@
  * 登录
  */
 $(document).ready(function(){
+	// 二维码浮动效果
+	$("#show-code").powerFloat({
+		targetMode : "ajax"
+	});
+	// 显示登陆界面
+	$("#enter-exam").click(function() {
+		$(".advertise").css("display", "none");
+		$(".banner-right").css("margin-top", "10px");
+		$(".login_register").css("display", "block");
+	});
+	$(".change-register").click(function(event) {
+		$("#login").css("display", "none");
+		$("#register").css("display", "block");
+	});
+	$(".change-login").click(function(event) {
+		$("#register").css("display", "none");
+		$("#login").css("display", "table-cell");
+	});
+	
 	$(".loginBtn").on('click',function(){
 		login();
     });

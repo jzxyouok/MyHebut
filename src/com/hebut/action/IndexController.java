@@ -30,11 +30,27 @@ public class IndexController {
 	BillboardService boardService;
 
 	/**
-	 * 登录
+	 * myhebut首页
 	 */
 	@RequestMapping(value = "", method = RequestMethod.GET)
-	public String login() {
-		return "login";
+	public String myhebut() {
+		return "myhebut";
+	}
+	
+	/**
+	 * 源码下载
+	 */
+	@RequestMapping(value = "download", method = RequestMethod.GET)
+	public String download() {
+		return "download";
+	}
+	
+	/**
+	 * 捐赠
+	 */
+	@RequestMapping(value = "donate", method = RequestMethod.GET)
+	public String donate() {
+		return "donate";
 	}
 
 	/**
@@ -64,7 +80,7 @@ public class IndexController {
 	@RequestMapping(value = "logout", method = RequestMethod.GET)
 	public String logout(HttpServletRequest request) {
 		request.getSession().invalidate();
-		return "login";
+		return "myhebut";
 	}
 
 	/**
