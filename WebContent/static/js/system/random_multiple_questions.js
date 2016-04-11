@@ -73,7 +73,7 @@ $(document).ready(function() {
 		console.log(params);
 		$.ajax({
 			type : "POST",
-			url : "/" + subject + "/add",
+			url : "/add",
 			data: params,
 			dataType : "json",
 			contentType : "application/json;charset=utf-8",
