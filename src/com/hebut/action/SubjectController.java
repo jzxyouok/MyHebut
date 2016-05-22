@@ -130,11 +130,10 @@ public class SubjectController {
 				question.setAnswerF(answerOwn);
 				// 将错题添加到wrongQuestions
 				multipleWrongQuestions.add(question);
-				// 每道0.5分;
-				if (subject.equals("1")) {
-					score -= 0.5;
-				} else {
+				if (subject.equals("0")) {
 					score -= 1;
+				} else {
+					score -= 0.5;
 				}
 				// auto_flag为1则需要自动添加错题
 				if (auto_flag == 1) {
@@ -196,6 +195,10 @@ public class SubjectController {
 				if (auto_flag == 1) {
 					subjectService.addNote(userId, questionId, answerOwn);
 				}
+			} else { // 答对情况下要判断是否需要删除错题
+				if (auto_flag == 2) {
+					subjectService.deletePraticeNote(userId, questionId);
+				}
 			}
 		}
 
@@ -221,6 +224,10 @@ public class SubjectController {
 				// auto_flag为1则需要自动添加错题
 				if (auto_flag == 1) {
 					subjectService.addNote(userId, questionId, answerOwn);
+				}
+			} else { // 答对情况下要判断是否需要删除错题
+				if (auto_flag == 2) {
+					subjectService.deletePraticeNote(userId, questionId);
 				}
 			}
 		}

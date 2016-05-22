@@ -46,6 +46,11 @@
 		delete from note
 		where noteId = #{noteId}	
 	</delete>
+	
+	<delete id="deleteNoteByQuestionId">
+		delete from note
+		where userId = #{0} and questionId = #{1}	
+	</delete>
 
 	<select id="selectNote" resultType="Note">
 		select  * from note

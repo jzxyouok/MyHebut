@@ -87,8 +87,8 @@
 					<div class="content">
 						<p>如果您有好的意见或者建议请联系我，我将尽快回复！</p>
 						<p>如果网站在内容或者浏览中出现问题，也请留言给我，我会尽快解决！</p>
-						<p>QQ：7336726</p>
-						<p>Email：admin@myhebut.com</p>
+						<p>QQ交流群：461286050</p>
+						<p>Email：codinghx@foxmail.com</p>
 					</div>
 					<form action="/addMessage" method="post">
 						<div class="form-group">

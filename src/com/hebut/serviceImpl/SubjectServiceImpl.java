@@ -153,4 +153,10 @@ public class SubjectServiceImpl implements SubjectService {
 		List<Question> multipleQuestions = questionDao.selectMultipleQuestionsByKeyword(keyword, subject);
 		return multipleQuestions;
 	}
+
+
+	@Override
+	public void deletePraticeNote(int userId, int questionId) {
+		noteDao.deleteNoteByQuestionId(userId, questionId);
+	}
 }

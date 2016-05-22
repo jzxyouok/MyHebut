@@ -548,18 +548,17 @@ blockquote {
 
 /* footer */
 footer {
-	height: 60px;
 	width: 100%;
 	background-color: #ddd;
 	overflow: hidden;
+	padding: 15px;
 }
 
-.beian {
+footer > a {
 	color: #999;
 	display: block;
 	text-align: center;
 	height: 20px;
-	margin: 20px;
 }
 
 .beian:hover {

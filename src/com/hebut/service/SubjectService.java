@@ -44,6 +44,12 @@ public interface SubjectService {
 	public void deleteNote(int noteId);
 	
 	/**
+	 * 删除错题练习时答对的错题
+	 */
+	public void deletePraticeNote(int userId, int questionId);
+	
+	
+	/**
 	 * 获得章节对应的单选题库
 	 */
 	public List<Question> getSingleQuestionsBySection(String section, String subject);
@@ -66,7 +72,7 @@ public interface SubjectService {
 	/**
 	 * 删除考试记录
 	 */
-	public void deleteRecord(int id);
+	public void deleteRecord(int recordId);
 	
 	/**
 	 * 根据章节信息,单选多选类型

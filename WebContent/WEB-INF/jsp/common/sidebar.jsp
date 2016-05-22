@@ -169,12 +169,6 @@
 											</li>					
 										</ul>
 									</li>	
-									<li>
-										<a href="/scoreSearch">
-											<i class="fa fa-book" aria-hidden="true"></i>
-											<span>成绩查询(免密码)</span>
-										</a>					
-									</li>
 								</c:if> 
 								<li>
 									<a href="/message">
@@ -196,7 +190,7 @@
 						<li><a href="http://jwc.hebut.edu.cn/">教务处</a></li>
 					</ul>
 					<div class="copyright text-center">
-						<small><i class="fa fa-coffee"></i>admin@myhebut.com</small>
+						<small><i class="fa fa-coffee"></i>QQ交流群：461286050</small>
 					</div>
 			
 				</div>

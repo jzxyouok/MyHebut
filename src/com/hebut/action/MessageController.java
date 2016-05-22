@@ -48,7 +48,7 @@ public class MessageController {
 		// 重新返回留言界面
 		List<Message> messages = messageService.getMessagesByUserId(userId);
 		model.put("messages", messages);
-		return "messages";
+		return "message";
 	}
 
 }

@@ -153,6 +153,12 @@
 							</ol>
 						</div>
 					</div>
+					<div class="auto-add">
+						<label> <input type="checkbox" name="auto" value="2" />
+							<input type="checkbox" name="auto" value="0" checked="checked"
+							style="display: none" /> 自动删除错题(选中后系统将自动把答对的试题从错题集中删除) <br>
+						</label>
+					</div>
 					<input type="text" value="${singleQuestionNotes.size()}" id="singleAmount" name="singleAmount" style="display: none">
 					<input type="text" value="${MultipleQuestionNotes.size()}" id="multipleAmount" name="multipleAmount" style="display: none">
 					<input type="checkbox" name="auto" value="0" checked="checked" style="display:none"/>

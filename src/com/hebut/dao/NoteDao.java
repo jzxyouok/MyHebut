@@ -25,6 +25,11 @@ public interface NoteDao {
 	 * 删除错题
 	 */
 	public void deleteNote(int noteId);
+	
+	/**
+	 * 删除错题
+	 */
+	public void deleteNoteByQuestionId(int userId, int questionId);
 
 	/**
 	 * 查找用户的指定错题

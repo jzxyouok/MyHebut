@@ -143,8 +143,8 @@
 					<img src="${basePath}/img/star.png" style="display: inline-block;"></p>
 				<div class="gray-divider"></div>
 
-				<p class="no-top">&nbsp;&nbsp;&nbsp;&nbsp;关于远在天国的IOS版</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;因为要准备暑期以及大四的实习,我一个人实在没有时间和精力去开发IOS,如果你熟悉IOS开发,而且有兴趣开发一个IOS版的悦河工,请联系我,我会为你提供完整的api接口文档,帮助你完成IOS版悦河工的开发。</p>
+				<p class="no-top">&nbsp;&nbsp;&nbsp;&nbsp;关于IOS版</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;因为这学期发生了很多没有意料到的突然事件,我一个人实在没有时间和精力去完成IOS的开发,只能暂时搁置.如果你熟悉IOS开发,而且有兴趣开发一个IOS版的悦河工,请联系我,我会为你提供完整的api接口文档,帮助你完成IOS版悦河工的开发。</p>
 			</div>
 
 		</div>

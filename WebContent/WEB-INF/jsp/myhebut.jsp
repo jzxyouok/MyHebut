@@ -93,7 +93,7 @@
 					<div class="row">
 
 						<div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-1 banner-phone">
-							<img src="${basePath}/img/phone-index.png"></div>
+							<img src="${basePath}/img/phone-find-index.png"></div>
 						<div class="col-lg-6 col-md-6 banner-right">
 							<p class="banner-title">
 								<img src="${basePath}/img/title.png"/>
@@ -192,7 +192,7 @@
 						<p>还有排行榜，你，是学霸吗?</p>
 					</div>
 					<div class="col-md-6 img-box">
-						<img src="${basePath}/img/phone.png" alt=""></div>
+						<img src="${basePath}/img/phone-exam.png" alt=""></div>
 				</div>
 			</div>
 		</div>
@@ -206,7 +206,7 @@
 						<p>拒绝繁琐！一个app,你想要的，它都有。</p>
 					</div>
 					<div class="col-md-6 img-box">
-						<img src="${basePath}/img/phone.png" alt=""></div>
+						<img src="${basePath}/img/phone-index.png" alt=""></div>
 				</div>
 			</div>
 		</div>
@@ -220,12 +220,12 @@
 						<p>它，就是你的小灵通。</p>
 					</div>
 					<div class="col-md-6 img-box">
-						<img src="${basePath}/img/phone.png" alt=""></div>
+						<img src="${basePath}/img/phone-find.png" alt=""></div>
 				</div>
 			</div>
 		</div>
-		<footer >
-			<a href="http://www.miitbeian.gov.cn/" class="beian">浙ICP备15043822号</a>
+		<footer>
+			<a href="http://www.miitbeian.gov.cn/" target="_blank">浙ICP备15043822号</a>
 		</footer>
 
 	<script src="${basePath}/js/common/jquery.min.js"></script>
