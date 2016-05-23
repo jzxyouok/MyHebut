@@ -91,7 +91,9 @@
 							<input type="text" value="${keyword}" name="keyword" style="display: none">
 							<input type="text" value="1" name="subject" id="subject" style="display: none">
 							<button class="btn btn-primary choose-mayuan" type="button">马原</button>
-							<button class="btn btn-primary choose-maogai" type="button">毛概</button>
+							<button class="btn btn-primary choose-maogai-shang" type="button">毛概(上)</button>
+							<button class="btn btn-primary choose-maogai-xia" type="button">毛概(下)</button>
+							<button class="btn btn-primary choose-jindaishi" type="button">近代史</button>
 						</form>
 					</div>
 				</div>

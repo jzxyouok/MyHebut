@@ -6,8 +6,16 @@ $(document).ready(function() {
 		$("#subject").val("0");
 		$("#choose-subject").submit();
 	});
-	$(".choose-maogai").click(function() {
+	$(".choose-maogai-shang").click(function() {
 		$("#subject").val("1");
+		$("#choose-subject").submit();
+	});
+	$(".choose-maogai-xia").click(function() {
+		$("#subject").val("2");
+		$("#choose-subject").submit();
+	});
+	$(".choose-jindaishi").click(function() {
+		$("#subject").val("3");
 		$("#choose-subject").submit();
 	});
 });
