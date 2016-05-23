@@ -96,11 +96,11 @@
 			</div>
 			<div class="download-content">
 				<h4 class="download-title">悦河工在线考试系统源码</h4>
-				<a target="_blank" href="#" class="btn btn-warning btn-lg" style="border-radius: 5px;">下载源码</a>
+				<a target="_blank" href="https://github.com/hxyfj/MyHebut" class="btn btn-warning btn-lg" style="border-radius: 5px;">下载源码</a>
 			</div>
 			<div class="download-content">
 				<h4 class="download-title">悦河工Android源码</h4>
-				<a target="_blank" href="#" class="btn btn-warning btn-lg" style="border-radius: 5px;">下载源码</a>
+				<a target="_blank" href="https://github.com/hxyfj/MyHebut-Android" class="btn btn-warning btn-lg" style="border-radius: 5px;">下载源码</a>
 			</div>
 
 			<div>
