@@ -34,31 +34,36 @@ public class SubjectServiceImpl implements SubjectService {
 		return question;
 	}
 
-
 	@Override
 	public List<Question> getSingleQuestions(String subject) {
-		if(subject.equals("0")){
+		if (subject.equals("0")) {
 			List<Question> singleQuestions = questionDao.selectSingleQuestions(60, subject);
 			return singleQuestions;
-		} else if(subject.equals("1")){
+		} else if (subject.equals("1")) {
 			List<Question> singleQuestions = questionDao.selectSingleQuestions(40, subject);
 			return singleQuestions;
-		} else{
+		} else if (subject.equals("2")) {
 			List<Question> singleQuestions = questionDao.selectSingleQuestions(40, subject);
+			return singleQuestions;
+		} else {
+			List<Question> singleQuestions = questionDao.selectSingleQuestions(50, subject);
 			return singleQuestions;
 		}
 	}
 
 	@Override
 	public List<Question> getMultipleQuestions(String subject) {
-		if(subject.equals("0")){
+		if (subject.equals("0")) {
 			List<Question> multipleQuestions = questionDao.selectMultipleQuestions(10, subject);
 			return multipleQuestions;
-		} else if(subject.equals("1")){
+		} else if (subject.equals("1")) {
 			List<Question> multipleQuestions = questionDao.selectMultipleQuestions(40, subject);
 			return multipleQuestions;
-		} else{
+		} else if (subject.equals("2")) {
 			List<Question> multipleQuestions = questionDao.selectMultipleQuestions(40, subject);
+			return multipleQuestions;
+		} else {
+			List<Question> multipleQuestions = questionDao.selectMultipleQuestions(50, subject);
 			return multipleQuestions;
 		}
 	}
@@ -74,7 +79,7 @@ public class SubjectServiceImpl implements SubjectService {
 		List<Note> multipleQuestionNotes = noteDao.selectMultipleNotesByUserId(userId, subject);
 		return multipleQuestionNotes;
 	}
-	
+
 	@Override
 	public boolean addNote(int userId, int questionId, String answerF) {
 		Note questionNote = new Note();
@@ -153,7 +158,6 @@ public class SubjectServiceImpl implements SubjectService {
 		List<Question> multipleQuestions = questionDao.selectMultipleQuestionsByKeyword(keyword, subject);
 		return multipleQuestions;
 	}
-
 
 	@Override
 	public void deletePraticeNote(int userId, int questionId) {

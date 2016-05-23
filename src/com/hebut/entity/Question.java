@@ -4,7 +4,7 @@ public class Question {
 
 	/** 题库中的题号 */
 	private int questionId;
-	/** 题目科目 0为马原,1为毛概上 */
+	/** 题目科目 0为马原,1为毛概上,2为毛概下,3为近现代史纲要 */
 	private int subject;
 	/** 题目类型 0为单选,1为多选 */
 	private int type;

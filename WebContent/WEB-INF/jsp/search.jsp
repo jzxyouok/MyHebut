@@ -93,7 +93,7 @@
 							<button class="btn btn-primary choose-mayuan" type="button">马原</button>
 							<button class="btn btn-primary choose-maogai-shang" type="button">毛概(上)</button>
 							<button class="btn btn-primary choose-maogai-xia" type="button">毛概(下)</button>
-							<button class="btn btn-primary choose-jindaishi" type="button">近代史</button>
+							<button class="btn btn-primary choose-shigang" type="button">近现代史纲要</button>
 						</form>
 					</div>
 				</div>

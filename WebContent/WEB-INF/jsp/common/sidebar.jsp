@@ -144,6 +144,44 @@
 										</li>									
 									</ul>
 								</li>
+								<li class="nav-parent">
+									<a>
+										<i class="fa fa-copy" aria-hidden="true"></i>
+										<span>近现代史纲要</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="/exam?subject=3">
+												<span class="text">在线考试</span>
+											</a>
+										</li>
+										<li>
+											<a href="/note?subject=3">
+												<span class="text">错题纠错</span>
+											</a>
+										</li>
+										<li>
+											<a href="/notePractice?subject=3">
+												<span class="text">错题练习</span>
+											</a>
+										</li>
+										<li>
+											<a href="/randomPratice?subject=3">
+												<span class="text">随机练习</span>
+											</a>
+										</li>
+										<li>
+											<a href="/questions?subject=3">
+												<span class="text">章节练习</span>
+											</a>
+										</li>
+										<li>
+											<a href="/record?subject=3">
+												<span class="text">考试记录</span>
+											</a>
+										</li>									
+									</ul>
+								</li>
 								<c:set var="power" value="${loginedUser.power}" /> 
 								<c:if test="${power == 1}">
 									<li class="nav-parent">

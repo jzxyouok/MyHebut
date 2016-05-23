@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$("#subject").val("2");
 		$("#choose-subject").submit();
 	});
-	$(".choose-jindaishi").click(function() {
+	$(".choose-shigang").click(function() {
 		$("#subject").val("3");
 		$("#choose-subject").submit();
 	});

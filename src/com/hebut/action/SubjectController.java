@@ -60,6 +60,10 @@ public class SubjectController {
 		int userId = userService.getUserId(request);
 		// 总分40分
 		float score = 40;
+		// 史纲50分总分
+		if (subject.equals("3")) {
+			score = 50;
+		}
 		// 单选题数
 		int single_size = Integer.parseInt(request.getParameter("singleAmount"));
 		// 多选题数
@@ -327,7 +331,7 @@ public class SubjectController {
 		List<Question> singleQuestions = subjectService.getSingleQuestionsBySection(section, subject);
 		List<Question> multipleQuestions = subjectService.getMultipleQuestionsBySection(section, subject);
 		// 将章节名转换为短章节名
-		if (subject.equals("1")) {
+		if (subject.equals("1") || subject.equals("2")) {
 			section = ExamUtil.getShortSectionName(section_num);
 		}
 		model.put("subject", subject);

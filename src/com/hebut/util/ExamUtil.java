@@ -72,17 +72,28 @@ public class ExamUtil {
 			sectionMap.put("4", "社会主义建设道路初步探索的理论成果");
 			sectionMap.put("5", "建设中国特色社会主义总依据");
 			sectionMap.put("6", "社会主义本质和总任务");
-		} else{
+		} else if(subject.equals("2")){
 			sectionMap.put("7", "社会主义改革开放理论");
-			sectionMap.put("8.1", "建设中国特色社会主义总布局-经济");
-			sectionMap.put("8.2", "建设中国特色社会主义总布局-政治");
-			sectionMap.put("8.3", "建设中国特色社会主义总布局-文化");
-			sectionMap.put("8.4", "建设中国特色社会主义总布局-和谐社会");
-			sectionMap.put("8.5", "建设中国特色社会主义总布局-生态文明");
+			sectionMap.put("8.1", "建设中国特色社会主义经济");
+			sectionMap.put("8.2", "建设中国特色社会主义政治");
+			sectionMap.put("8.3", "建设中国特色社会主义文化");
+			sectionMap.put("8.4", "建设社会主义和谐社会");
+			sectionMap.put("8.5", "建设社会主义生态文明");
 			sectionMap.put("9", "实现祖国完全统一的理论");
 			sectionMap.put("10", "中国特色社会主义外交和国际战略");
 			sectionMap.put("11", "建设中国特色社会主义的根本目的和依靠力量理论");
 			sectionMap.put("12", "中国特色社会主义领导核心理论");
+		} else {
+			sectionMap.put("0", "开篇的话");
+			sectionMap.put("0.5", "综述 风云变幻的八十年");
+			sectionMap.put("1", "第一章");
+			sectionMap.put("2", "第二章");
+			sectionMap.put("3", "第三章");
+			sectionMap.put("3.5", "中篇综述");
+			sectionMap.put("4", "第四章");
+			sectionMap.put("5", "第五章");
+			sectionMap.put("6", "第六章");
+			sectionMap.put("7", "第七章");
 		}
 		return sectionMap;
 	}
@@ -104,6 +115,26 @@ public class ExamUtil {
 			return "建设特色社会主义总依据";
 		case "6":
 			return "社会主义本质和总任务";
+		case "7":
+			return "社会主义改革开放理论";
+		case "8.1":
+			return "中国特色社会主义经济";
+		case "8.2":
+			return "中国特色社会主义政治";
+		case "8.3":
+			return "中国特色社会主义文化";
+		case "8.4":
+			return "建设社会主义和谐社会";
+		case "8.5":
+			return "建设社会主义生态文明";
+		case "9":
+			return "实现祖国完全统一的理论";
+		case "10":
+			return "外交和国际战略";
+		case "11":
+			return "根本目的和依靠力量理论";
+		case "12":
+			return "社会主义领导核心理论";
 		default:
 			return "error";
 		}

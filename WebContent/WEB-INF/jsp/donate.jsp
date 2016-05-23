@@ -105,7 +105,7 @@
 		<div class="panel panel-primary">
 			<div class="panel-heading">捐赠人员名单：</div>
 			<div class="panel-body">
-				<p>多谢大家支持，下表为时间倒序排列。</p>
+				<p>多谢大家支持，下表按时间排列。</p>
 			</div>
 			<table class="table table-hover" style="font-size: 13px;">
 				<thead>
