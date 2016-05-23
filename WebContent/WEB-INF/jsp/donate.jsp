@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>	
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,25 +112,24 @@
 					<tr>
 						<th>姓名</th>
 						<th>金额</th>
-						<th>留言</th>
+						<th>时间</th>
+						<th>姓名</th>
+						<th>金额</th>
 						<th>时间</th>
 					</tr>
 				</thead>
 				<tbody>
-
-					<tr>
-						<td style="color: green;">test</td>
-						<td>10.00</td>
-						<td>有你真是太好了</td>
-						<td>2015-07-16 16:56</td>
-					</tr>
-					<tr>
-						<td style="color: green;">test</td>
-						<td>10.00</td>
-						<td>有你真是太好了</td>
-						<td>2015-07-16 16:56</td>
-					</tr>
-
+        			<c:forEach var="donate" items="${donates}" varStatus="status">
+				        	<c:if test="${status.count%2==1}"> 
+					        	<tr>
+					        </c:if>
+						          <td style="color:green;">${donate.donateName}</td>
+						          <td>${donate.donateMoney}</td>
+						          <td>${donate.donateTime}</td>
+					        <c:if test="${status.count%2==0}"> 
+					        	</tr>
+					        </c:if>
+					</c:forEach>
 				</tbody>
 			</table>
 		</div>

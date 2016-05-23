@@ -14,9 +14,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.Gson;
 import com.hebut.entity.Billboard;
+import com.hebut.entity.Donate;
 import com.hebut.entity.JsonResult;
 import com.hebut.entity.User;
 import com.hebut.service.BillboardService;
+import com.hebut.service.DonateService;
 import com.hebut.service.UserService;
 import com.hebut.util.TimeUtil;
 
@@ -26,6 +28,9 @@ public class IndexController {
 	@Autowired
 	UserService userService;
 
+	@Autowired
+	DonateService donateService;
+	
 	@Autowired
 	BillboardService boardService;
 
@@ -49,7 +54,9 @@ public class IndexController {
 	 * 捐赠
 	 */
 	@RequestMapping(value = "donate", method = RequestMethod.GET)
-	public String donate() {
+	public String donate(Map<String, Object> model) {
+		List<Donate> donates = donateService.getDonate();
+		model.put("donates", donates);
 		return "donate";
 	}
 

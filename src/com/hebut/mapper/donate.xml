@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hebut.dao.DonateDao">
+
+	<resultMap type="Donate" id="resultListDonate" >  
+        <result column="donateId" property="donateId"/>  
+        <result column="donateName" property="donateName"/>  
+        <result column="donateMoney" property="donateMoney"/>  
+        <result column="donateTime" property="donateTime"/>  
+    </resultMap> 
+    
+    <select id="selectDonates"  resultMap="resultListDonate">
+	    select * from donate  order by donateId desc
+	</select>
+	
+</mapper>

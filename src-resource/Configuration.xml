@@ -9,5 +9,6 @@
 		<typeAlias alias="Record" type="com.hebut.entity.Record" />
 		<typeAlias alias="Message" type="com.hebut.entity.Message" />
 		<typeAlias alias="Billboard" type="com.hebut.entity.Billboard" />
+		<typeAlias alias="Donate" type="com.hebut.entity.Donate" />
 	</typeAliases>
 </configuration>
