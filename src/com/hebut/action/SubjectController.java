@@ -421,17 +421,17 @@ public class SubjectController {
 	public String result(Map<String, Object> model, HttpServletRequest request) {
 		String keyword = request.getParameter("keyword");
 		String subject = request.getParameter("subject");
-		List<Question> singleQuestions = null;
-		List<Question> multipleQuestions = null;
+		List<Question> singleQuestions = subjectService.getSingleQuestionByKeyword(keyword, subject);
+		List<Question> multipleQuestions = subjectService.getMultipleQuestionByKeyword(keyword, subject);
 
 		if (subject.equals("0")) {
-			singleQuestions = subjectService.getSingleQuestionByKeyword(keyword, subject);
-			multipleQuestions = subjectService.getMultipleQuestionByKeyword(keyword, subject);
 			model.put("subject", "马原");
 		} else if (subject.equals("1")) {
-			singleQuestions = subjectService.getSingleQuestionByKeyword(keyword, subject);
-			multipleQuestions = subjectService.getMultipleQuestionByKeyword(keyword, subject);
-			model.put("subject", "毛概");
+			model.put("subject", "毛概(上)");
+		} else if (subject.equals("2")) {
+			model.put("subject", "毛概(下)");
+		} else if (subject.equals("3")) {
+			model.put("subject", "史纲");
 		} else {
 			System.out.println("not exist");
 		}

@@ -8,9 +8,15 @@ $(document).ready(function(){
 	});
 	// 显示登陆界面
 	$("#enter-exam").click(function() {
-		$(".advertise").css("display", "none");
-		$(".banner-right").css("margin-top", "10px");
-		$(".login_register").css("display", "block");
+		var loginedUser = $("#loginedUser").val();
+		// 未登录则进入显示登陆框
+		if (loginedUser == ''){
+			$(".advertise").css("display", "none");
+			$(".banner-right").css("margin-top", "10px");
+			$(".login_register").css("display", "block");
+		} else { // 已登陆用户则直接进入考试系统
+			window.location.href="/index";
+		}			
 	});
 	$(".change-register").click(function(event) {
 		$("#login").css("display", "none");

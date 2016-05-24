@@ -9,9 +9,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 <title>	
-	<c:set var="subject" value="${subject}" /> 
-	<c:if test="${subject == 0}">马原</c:if>
-	<c:if test="${subject == 1}">毛概</c:if>
 	批改结果
 </title>
 

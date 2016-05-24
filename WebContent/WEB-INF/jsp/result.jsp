@@ -9,9 +9,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
  
 <title>	
-	<c:set var="subject" value="${subject}" /> 
-	<c:if test="${subject == 0}">马原</c:if>
-	<c:if test="${subject == 1}">毛概</c:if>
 	搜索结果
 </title>
 
@@ -89,7 +86,11 @@
 				<div class="main_page">
 					<form class="exam-form" action="/questionsCorrect" method="post">
 					<div class="panel-body section">
-							毛概搜索结果：
+							<c:if test="${subject == 0}">马原</c:if>
+							<c:if test="${subject == 1}">毛概(上)</c:if>
+							<c:if test="${subject == 2}">毛概(下)</c:if>
+							<c:if test="${subject == 3}">史纲</c:if>
+							搜索结果：
 							<button type="button" id="highlight-answer" class="btn btn-primary">所有题目正确答案高亮显示</button>
 					</div>
 					<div class="panel">

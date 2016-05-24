@@ -112,14 +112,6 @@
 					&nbsp;&nbsp;&nbsp;&nbsp;近期,我会在我的个人博客上写一些项目的开发经验,开发教程,希望大家多多关注.有什么想知道的问题或技术也可以加群告诉我,我会通过博客做一期专门的介绍或解释.
 				</p>
 				<div class="gray-divider"></div>
-				<p class="no-top">
-					&nbsp;&nbsp;&nbsp;&nbsp;我的新浪微博:&nbsp;&nbsp;
-					<a href="http://weibo.com/u/5620074099">http://weibo.com/u/5620074099</a>
-				</p>
-				<p>
-					&nbsp; &nbsp;&nbsp;&nbsp;为了更好的享受悦河工的服务,大家多多关注我的新浪微博,我会通过微博提前通知悦河工网站/app的停机维护时间,以及新版本或者重大bug的通知。
-				</p>
-				<div class="gray-divider"></div>
 
 				<p class="no-top">
 					&nbsp;&nbsp;&nbsp;&nbsp;我的github:&nbsp;&nbsp;

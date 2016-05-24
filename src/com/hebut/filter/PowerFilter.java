@@ -19,7 +19,7 @@ public class PowerFilter extends OncePerRequestFilter {
 			throws ServletException, IOException {
 
 		// 需要权限过滤的url
-		String[] Filter = new String[] { "/scoreSearch","/admin" };
+		String[] Filter = new String[] {"/admin" };
 
 		// 请求的uri
 		String uri = request.getRequestURI();
