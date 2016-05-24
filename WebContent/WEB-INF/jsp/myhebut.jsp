@@ -107,7 +107,7 @@
 							<div class="advertise">
 								<div class="row" >
 									<div class="col-sm-6 col-xs-12 xs-center">
-										<a class="myhebut-btn"> <i class="fa fa-android fa-lg"></i>
+										<a class="myhebut-btn" href="http://pan.baidu.com/s/1pLRCu1P" target="_blank"> <i class="fa fa-android fa-lg"></i>
 											&nbsp;&nbsp;Android版下载
 										</a>
 									</div>
