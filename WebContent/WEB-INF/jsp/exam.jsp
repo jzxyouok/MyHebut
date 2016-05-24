@@ -74,7 +74,9 @@
 							<li class="hidden-xs"><a href="#"><i class="fa fa-file-text"></i>		
 									<c:set var="subject" value="${subject}" /> 
 									<c:if test="${subject == 0}">马原</c:if>
-									<c:if test="${subject == 1}">毛概</c:if></a></li>
+									<c:if test="${subject == 1}">毛概(上)</c:if>
+									<c:if test="${subject == 2}">毛概(下)</c:if>
+									<c:if test="${subject == 3}">史纲</c:if></a></li>
 							<li class="active hidden-xs"><i class="fa fa-smile-o"></i>在线考试</li>
 							<span class="time">考试剩余时间：<span id="time"></span></span>
 						</ol>
@@ -90,7 +92,11 @@
 						<div class="panel">
 							<div class="panel-heading bk-bg-primary">
 								<h6>
-									<i class="fa fa-signal red"></i>单选题(40*0.5分)
+									<i class="fa fa-signal red"></i>单选题
+									<c:if test="${subject == 0}">(60*0.5分)</c:if>
+									<c:if test="${subject == 1}">(40*0.5分)</c:if>
+									<c:if test="${subject == 2}">(40*0.5分)</c:if>
+									<c:if test="${subject == 3}">(50*0.5分)</c:if>
 								</h6>
 								<div class="panel-actions">
 									<a href="#" class="btn-minimize control_panel_single"><i
@@ -128,15 +134,11 @@
 						<div class="panel">
 							<div class="panel-heading bk-bg-primary">
 								<h6>
-									<i class="fa fa-signal red"></i>多选题(
-									<c:set var="mode" value="${mode}" />
-									<c:if test="${mode == 0}">
-												   40*0.5分
-												</c:if>
-									<c:if test="${mode == 1}">
-												   20*1.0分
-												</c:if>
-									)
+									<i class="fa fa-signal red"></i>多选题
+									<c:if test="${subject == 0}">(10*1.0分)</c:if>
+									<c:if test="${subject == 1}">(40*0.5分)</c:if>
+									<c:if test="${subject == 2}">(40*0.5分)</c:if>
+									<c:if test="${subject == 3}">(50*0.5分)</c:if>
 								</h6>
 								<div class="panel-actions">
 									<a href="#" class="btn-minimize control_panel_multiple"><i

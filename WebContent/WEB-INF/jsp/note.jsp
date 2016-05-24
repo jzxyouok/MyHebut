@@ -74,7 +74,9 @@
 							<li><a href="#"><i class="fa fa-file-text"></i>
 							<c:set var="subject" value="${subject}" /> 
 							<c:if test="${subject == 0}">马原</c:if>
-							<c:if test="${subject == 1}">毛概</c:if></a></li>
+							<c:if test="${subject == 1}">毛概(上)</c:if>
+							<c:if test="${subject == 2}">毛概(下)</c:if>
+							<c:if test="${subject == 3}">史纲</c:if></a></li>
 							<li class="active"><i class="fa fa-pencil-square"></i>错题集</li>
 						</ol>
 					</div>
