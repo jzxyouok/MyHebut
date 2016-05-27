@@ -1,12 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
-<html>  
+<html>
 <head>
 <meta charset="UTF-8" />
 <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 <title>Hebut在线考试系统</title>
 
@@ -36,18 +38,16 @@
 		<div class="container-fluid container-nav">
 			<!-- Start: Navbar Action -->
 			<ul class="nav navbar-nav navbar-actions navbar-left">
-				<li class="visible-md visible-lg">
-					<a href="#" id="main-menu-toggle"> <i class="fa fa-th-large"></i>
-					</a>
-				</li>
-				<li class="visible-xs visible-sm">
-					<a href="#" id="sidebar-menu"> <i class="fa fa-navicon"></i>
-					</a>
-				</li>
+				<li class="visible-md visible-lg"><a href="#"
+					id="main-menu-toggle"> <i class="fa fa-th-large"></i>
+				</a></li>
+				<li class="visible-xs visible-sm"><a href="#" id="sidebar-menu">
+						<i class="fa fa-navicon"></i>
+				</a></li>
 			</ul>
 			<!-- End: Navbar Action -->
 			<!-- Start: Topbar -->
-			<jsp:include page="common/topbar.jsp"/>
+			<jsp:include page="common/topbar.jsp" />
 			<!-- End: Topbar -->
 		</div>
 	</div>
@@ -56,7 +56,7 @@
 	<div class="container-fluid content">
 		<div class="row">
 			<!-- Start: Sidebar -->
-			<jsp:include page="common/sidebar.jsp"/>
+			<jsp:include page="common/sidebar.jsp" />
 			<!-- End: Sidebar -->
 
 			<!-- Start: Main Page -->
@@ -65,16 +65,10 @@
 				<div class="page-header">
 					<div class="pull-left">
 						<ol class="breadcrumb visible-sm visible-md visible-lg">
-							<li>
-								<a href="/index">
-									<i class="icon fa fa-home"></i>
+							<li><a href="/index"> <i class="icon fa fa-home"></i>
 									Home
-								</a>
-							</li>
-							<li class="active">
-								<i class="fa fa-laptop"></i>
-								首页
-							</li>
+							</a></li>
+							<li class="active"><i class="fa fa-laptop"></i> 首页</li>
 						</ol>
 					</div>
 					<div class="pull-right">
@@ -82,8 +76,15 @@
 					</div>
 				</div>
 				<!-- End: Page Header -->
-				<!-- Start: Main Content -->	
+				<!-- Start: Main Content -->
 				<div class="main_page">
+					<div class="bdsharebuttonbox">
+						<a href="#" class="bds_more" data-cmd="more">你的分享宣传是我开发最大的动力：</a><a
+							href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a><a
+							href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a><a
+							href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a><a
+							href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ好友</a>
+					</div>
 					<table class="table table-hover">
 						<caption>公告</caption>
 						<thead>
@@ -102,6 +103,7 @@
 							</c:forEach>
 						</tbody>
 					</table>
+
 				</div>
 				<!-- End: Main Content -->
 			</div>
@@ -115,9 +117,10 @@
 	<script src="${basePath}/js/common/jquery.mmenu.min.js"></script>
 	<script src="${basePath}/js/common/core.min.js"></script>
 	<script src="${basePath}/js/common/baidu.js"></script>
-		
+	<script src="${basePath}/js/common/share.js"></script>
+
 	<script src="${basePath}/js/system/optimize.js"></script>
 	<script src="${basePath}/js/system/search.js"></script>
-	
+
 </body>
 </html>

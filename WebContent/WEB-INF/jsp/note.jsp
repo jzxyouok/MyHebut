@@ -87,7 +87,13 @@
 				<!-- End: Page Header -->
 				<!-- Start: Main Content -->	
 				<div class="main_page">
-					错题集：
+					<div class="bdsharebuttonbox">
+						<a href="#" class="bds_more" data-cmd="more">你的分享宣传是我开发最大的动力：</a><a
+							href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a
+							href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a
+							href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a
+							href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+					</div>
 					<div class="panel">
 						<div class="panel-heading bk-bg-primary">
 							<h6><i class="fa fa-signal red"></i>单选题</h6>
@@ -190,7 +196,8 @@
 	<script src="${basePath}/js/common/jquery.mmenu.min.js"></script>
 	<script src="${basePath}/js/common/core.min.js"></script>
 	<script src="${basePath}/js/common/baidu.js"></script>
-	
+	<script src="${basePath}/js/common/share.js"></script>
+
 	<script src="${basePath}/js/common/commonFunc.js"></script>
 	<script src="${basePath}/js/system/ajax_crud.js"></script>
 	<script src="${basePath}/js/system/optimize.js"></script>
