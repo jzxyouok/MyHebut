@@ -37,7 +37,7 @@ public class PowerFilter extends OncePerRequestFilter {
 			// 从session中获取登录者实体
 			User loginedUser = (User) request.getSession().getAttribute("loginedUser");
 			// 获取用户权限
-			int power = loginedUser.getPower();
+			int power = loginedUser == null? 0 :loginedUser.getPower();
 			if (power == 0) {
 				// 如果session中不存在登录者实体，则弹出框提示重新登录
 				// 设置request和response的字符集，防止乱码
