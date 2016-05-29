@@ -74,7 +74,8 @@ public class SubjectController {
 		// time为js计时器当前时间
 		int time = Integer.parseInt(request.getParameter("time"));
 		// 获得考试所用时间
-		String last_time = TimeUtil.getLastTime(time);
+		int seconds = 1800 - time;
+		String last_time = TimeUtil.getLastTime(seconds);
 		// 获得考试开始时间
 		String begin_time = TimeUtil.getDate();
 		// 存储单选题题号及用户选择
@@ -148,7 +149,7 @@ public class SubjectController {
 
 		// 记录本次考试
 		if (score > 5) {
-			subjectService.addRecord(userId, begin_time, last_time, score, subject);
+			subjectService.addRecord(userId, begin_time, last_time, score, subject, seconds);
 		}
 		model.put("subject", subject);
 		model.put("singleWrongQuestions", singleWrongQuestions);

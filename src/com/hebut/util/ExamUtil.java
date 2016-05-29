@@ -27,7 +27,7 @@ public class ExamUtil {
 	/**
 	 * 考试记录生成
 	 */
-	public static Record initRecord(int userId, String begin_time, String last_time, float score, String subject) {
+	public static Record initRecord(int userId, String begin_time, String last_time, float score, String subject, int seconds) {
 		Record record = new Record();
 		record.setUserId(userId);
 		record.setBegin_time(begin_time);
@@ -36,6 +36,7 @@ public class ExamUtil {
 		int percent = (int) (((float) score / 40) * 100);
 		record.setPercent(percent + "%");
 		record.setSubject(Integer.parseInt(subject));
+		record.setSeconds(seconds);
 		return record;
 	}
 

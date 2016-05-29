@@ -67,7 +67,7 @@ public interface SubjectService {
 	/**
 	 * 添加考试记录
 	 */
-	public void addRecord(int userId, String begin_time, String last_time, float score, String subject);
+	public void addRecord(int userId, String begin_time, String last_time, float score, String subject, int seconds);
 	
 	/**
 	 * 删除考试记录

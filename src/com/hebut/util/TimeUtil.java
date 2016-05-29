@@ -14,10 +14,8 @@ public class TimeUtil {
 	/**
 	 * 获得考试所用时间
 	 */
-	public static String getLastTime(int time){
+	public static String getLastTime(int seconds){
 		String last_time; 
-		// 所用时间(单位为秒)
-		int seconds = 1800 - time;
 		// 转化格式
 		int minute = seconds/60;
 		int second = seconds - minute * 60;

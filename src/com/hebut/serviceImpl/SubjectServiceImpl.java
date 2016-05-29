@@ -123,8 +123,8 @@ public class SubjectServiceImpl implements SubjectService {
 	}
 
 	@Override
-	public void addRecord(int userId, String begin_time, String last_time, float score, String subject) {
-		Record record = ExamUtil.initRecord(userId, begin_time, last_time, score, subject);
+	public void addRecord(int userId, String begin_time, String last_time, float score, String subject, int seconds) {
+		Record record = ExamUtil.initRecord(userId, begin_time, last_time, score, subject, seconds);
 		recordDao.addRecord(record);
 	}
 

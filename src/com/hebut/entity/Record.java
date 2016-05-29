@@ -4,18 +4,27 @@ public class Record {
 
 	/** 考试记录Id */
 	private int recordId;
+
 	/** 题目科目 0为马原,1为毛概上 */
 	private int subject;
+
 	/** 考试记录绑定的用户Id */
 	private int userId;
+
 	/** 考试开始时间 */
 	private String begin_time;
+
 	/** 考试持续时间 */
 	private String last_time;
+
 	/** 考试得分 */
 	private float score;
+
 	/** 得分率 */
 	private String percent;
+
+	/** 考试持续时间,单位为秒 */
+	private int seconds;
 
 	public int getRecordId() {
 		return recordId;
@@ -73,10 +82,17 @@ public class Record {
 		this.percent = percent;
 	}
 
+	public int getSeconds() {
+		return seconds;
+	}
+
+	public void setSeconds(int seconds) {
+		this.seconds = seconds;
+	}
+
 	@Override
 	public String toString() {
-		return "Record [recordId=" + recordId + "userId=" + userId + ", begin_time=" + begin_time + ",last_time="
-				+ last_time + ",percent=" + percent + "]";
+		return "Record [recordId=" + recordId + "userId=" + userId + ", begin_time=" + begin_time + ",last_time=" + last_time + ",percent=" + percent + "]";
 	}
 
 }

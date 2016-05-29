@@ -14,8 +14,8 @@
 
 	<insert id="addRecord" parameterType="Record">
 		insert into
-		record(subject,userId,begin_time,last_time,score,percent)
-		values(#{subject},#{userId},#{begin_time},#{last_time},#{score},#{percent})
+		record(subject,userId,begin_time,last_time,score,percent,seconds)
+		values(#{subject},#{userId},#{begin_time},#{last_time},#{score},#{percent},#{seconds})
 	</insert>
 
 	<select id="selectRecordsByUserId" parameterType="int" resultMap="resultListExamRecord">
