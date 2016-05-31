@@ -7,7 +7,7 @@ import com.hebut.entity.Donate;
 public interface DonateDao {
 
 	/**
-	 * 获取所有捐赠信息
+	 * 获取所有打赏信息
 	 */
 	public List<Donate> selectDonates();
 

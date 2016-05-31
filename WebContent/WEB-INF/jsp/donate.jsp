@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>	
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,7 +73,7 @@
 										<ul class="nav navbar-nav navbar-right">
 											<li><a href="/">首页</a></li>
 											<li><a href="download">源码下载</a></li>
-											<li class="active"><a href="donate">捐赠</a></li>
+											<li class="active"><a href="donate">打赏</a></li>
 										</ul>
 									</div>
 
@@ -97,39 +97,36 @@
 		</div>
 		<div style="padding: 20px 0; text-align: center;">
 			<h4>
-				支付宝扫码捐赠（ <span style="font-size: 40px;">任意金额</span> ）
+				支付宝扫码打赏（ <span style="font-size: 40px;">任意金额</span> ）
 			</h4>
 			<img src="${basePath}/img/zhifubao.png" style="margin: auto">
-			<h4>或直接向我手机支付宝转账:18222969123</h4>
-			<h6>需要留言的可以直接写在转账的备注里~</h6>
+			<h4>也可以向我的手机支付宝:18222969123&nbsp;&nbsp;&nbsp;直接进行打赏</h4>
+			<h6>需要留言的可以直接写在转账的备注里(打赏名单中须匿名的同学请在留言中注明)~</h6>
 		</div>
-		<div class="panel panel-primary">
-			<div class="panel-heading">捐赠人员名单：</div>
+		<div class="panel panel-primary table-responsive">
+			<div class="panel-heading">打赏人员名单：</div>
 			<div class="panel-body">
 				<p>多谢大家支持，下表按时间排列。</p>
 			</div>
-			<table class="table table-hover" style="font-size: 13px;">
+			<table class="table table-hover table-responsive"
+				style="font-size: 13px;">
 				<thead>
 					<tr>
 						<th>姓名</th>
 						<th>金额</th>
-						<th>时间</th>
-						<th>姓名</th>
-						<th>金额</th>
+						<th>留言</th>
 						<th>时间</th>
 					</tr>
 				</thead>
+
 				<tbody>
-        			<c:forEach var="donate" items="${donates}" varStatus="status">
-				        	<c:if test="${status.count%2==1}"> 
-					        	<tr>
-					        </c:if>
-						          <td style="color:green;">${donate.donateName}</td>
-						          <td>${donate.donateMoney}</td>
-						          <td>${donate.donateTime}</td>
-					        <c:if test="${status.count%2==0}"> 
-					        	</tr>
-					        </c:if>
+					<c:forEach var="donate" items="${donates}" varStatus="status">
+						<tr>
+							<td style="color: green;">${donate.donateName}</td>
+							<td>${donate.donateMoney}</td>
+							<td>${donate.donateMessage}</td>
+							<td>${donate.donateTime}</td>
+						</tr>
 					</c:forEach>
 				</tbody>
 			</table>
@@ -139,11 +136,11 @@
 				&nbsp;&nbsp;&nbsp;&nbsp;悦河工在线考试系统和Android版是我独自开发的项目,没有专门的团队,更没有学校经费。
 			</p>
 			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;悦河工一直在努力做得更好，但网站每天的运作都会产生一定的开销，如果您对悦河工表示认同或对您有所帮助。请捐赠作者来支持悦河工的持续开发。
+				&nbsp;&nbsp;&nbsp;&nbsp;悦河工一直在努力做得更好，但网站每天的运作都会产生一定的开销，如果您对悦河工表示认同或对您有所帮助。请打赏作者来支持悦河工的持续开发。
 			</p>
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp; 捐赠说明：</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp; 本站捐赠活动皆属自愿，谢谢支持。（悦河工QQ交流群：461286050）
+			<p>&nbsp;&nbsp;&nbsp;&nbsp; 打赏说明：</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp; 本站打赏活动皆属自愿，谢谢支持。（悦河工QQ交流群：461286050）
 			</p>
 		</div>
 	</div>

@@ -73,7 +73,7 @@
 													<a href="download">源码下载</a>
 												</li>
 												<li>
-													<a href="donate">捐赠</a>
+													<a href="donate">打赏</a>
 												</li>
 											</ul>
 										</div>
@@ -107,7 +107,7 @@
 							<div class="advertise">
 								<div class="row" >
 									<div class="col-sm-6 col-xs-12 xs-center">
-										<a class="myhebut-btn" href="http://pan.baidu.com/s/1pLRCu1P" target="_blank"> <i class="fa fa-android fa-lg"></i>
+										<a class="myhebut-btn" href="http://myhebut.oss-cn-hangzhou.aliyuncs.com/download%2FMyHebut-1.2.apk" target="_blank"> <i class="fa fa-android fa-lg"></i>
 											&nbsp;&nbsp;Android版下载
 										</a>
 									</div>

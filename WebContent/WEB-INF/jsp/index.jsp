@@ -86,9 +86,9 @@
 							href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ好友</a>
 					</div>
 					<div class="other_href">
-						<a href="http://www.myhebut.com/download" target="_blank">网站与安卓app已开源,源码点击下载</a>
+						<a href="download" target="_blank">悦河工网站与安卓app已开源,源码点击下载</a>
 						<br>
-						<a href="http://www.myhebut.com/donate" target="_blank">觉得网站或app很赞？点击犒劳作者</a>
+						<a href="donate" target="_blank">觉得网站或app很赞？点击犒劳作者</a>
 					</div>
 					<table class="table table-hover">
 						<caption>公告</caption>

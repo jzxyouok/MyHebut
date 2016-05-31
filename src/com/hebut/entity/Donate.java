@@ -8,6 +8,8 @@ public class Donate {
 	
 	private float donateMoney;
 	
+	private String donateMessage;
+	
 	private String donateTime;
 
 	public int getDonateId() {
@@ -32,6 +34,14 @@ public class Donate {
 
 	public void setDonateMoney(float donateMoney) {
 		this.donateMoney = donateMoney;
+	}
+
+	public String getDonateMessage() {
+		return donateMessage;
+	}
+
+	public void setDonateMessage(String donateMessage) {
+		this.donateMessage = donateMessage;
 	}
 
 	public String getDonateTime() {

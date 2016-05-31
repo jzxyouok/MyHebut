@@ -73,7 +73,7 @@
 													<a href="download">源码下载</a>
 												</li>
 												<li>
-													<a href="donate">捐赠</a>
+													<a href="donate">打赏</a>
 												</li>
 											</ul>
 										</div>

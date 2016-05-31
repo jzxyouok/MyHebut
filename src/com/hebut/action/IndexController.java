@@ -51,7 +51,7 @@ public class IndexController {
 	}
 	
 	/**
-	 * 捐赠
+	 * 打赏
 	 */
 	@RequestMapping(value = "donate", method = RequestMethod.GET)
 	public String donate(Map<String, Object> model) {

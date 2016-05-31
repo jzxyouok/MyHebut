@@ -8,6 +8,7 @@
         <result column="donateId" property="donateId"/>  
         <result column="donateName" property="donateName"/>  
         <result column="donateMoney" property="donateMoney"/>  
+        <result column="donateMessage" property="donateMessage"/>  
         <result column="donateTime" property="donateTime"/>  
     </resultMap> 
     
