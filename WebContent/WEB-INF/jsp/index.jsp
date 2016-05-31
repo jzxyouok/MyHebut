@@ -21,7 +21,7 @@
 <link href="${basePath}/css/jquery.mmenu.css" rel="stylesheet" />
 <link href="${basePath}/css/style.css" rel="stylesheet" />
 <link href="${basePath}/css/add-ons.min.css" rel="stylesheet" />
-<link href="${basePath}/css/billboard.css" rel="stylesheet" />
+<link href="${basePath}/css/index.css" rel="stylesheet" />
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -84,6 +84,11 @@
 							href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a><a
 							href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a><a
 							href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ好友</a>
+					</div>
+					<div class="other_href">
+						<a href="http://www.myhebut.com/download" target="_blank">网站与安卓app已开源,源码点击下载</a>
+						<br>
+						<a href="http://www.myhebut.com/donate" target="_blank">觉得网站或app很赞？点击犒劳作者</a>
 					</div>
 					<table class="table table-hover">
 						<caption>公告</caption>

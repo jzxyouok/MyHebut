@@ -100,6 +100,7 @@
 				支付宝扫码捐赠（ <span style="font-size: 40px;">任意金额</span> ）
 			</h4>
 			<img src="${basePath}/img/zhifubao.png" style="margin: auto">
+			<h4>或直接向我手机支付宝转账:18222969123</h4>
 			<h6>需要留言的可以直接写在转账的备注里~</h6>
 		</div>
 		<div class="panel panel-primary">
