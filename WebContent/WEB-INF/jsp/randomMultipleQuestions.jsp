@@ -100,6 +100,7 @@
 								<i class="fa fa-indent red"></i>
 								Time and tide wait for no man.
 							</h6>
+							<div class="current-num">0/0</div>							
 						</div>
 						<div class="panel-body">
 							<form class="form-horizontal exam-form" id="randomForm">

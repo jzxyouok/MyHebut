@@ -9,6 +9,7 @@ var answerT;
 $(document).ready(function() {
 	// 获取题数
 	var amount = $("#questionAmount").val();
+	$(".current-num").text("1/" + amount);
 	//初始化显示
 	$("#" + question_id + "_question").css("display","none");
 	// 用于记录已经随机过的试题
@@ -51,6 +52,8 @@ $(document).ready(function() {
 			arrayId.push(question_id);
 	 		$("#" + question_id + "_question").css("display","block");
 		}
+		// 设置当前题号
+		$(".current-num").text(arrayId.length + "/" + amount);
 	});
 	
 	/*
