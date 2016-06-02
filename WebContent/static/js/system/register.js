@@ -1,10 +1,13 @@
 /*
  * 注册及检验
  */
+var num = 1;
 $(document).ready(function() {
+	// 注册时检索input是否为空时减去1个button
 	$(".registerBtn").on('click', function() {
-		// 减去1个button
-		for (var i = 0; i < document.registerForm.elements.length - 1; i++) {
+		console.log(document.registerForm.elements.length);
+		console.log(num);
+		for (var i = 0; i < document.registerForm.elements.length - num; i++) {
 			if (document.registerForm.elements[i].value == "") {
 				alert("请将信息填写完整");
 				document.registerForm.elements[i].focus();
@@ -34,6 +37,8 @@ function register() {
 				showLogin();
 			} else {
 				alert("用户名已存在");
+				// 在registerForm末尾又会多出一个input标签，检索是否为空时应删去
+				num = 2;
 			}
 		}
 	});
