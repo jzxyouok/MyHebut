@@ -351,8 +351,14 @@ public class SubjectController {
 
 		int userId = userService.getUserId(request);
 		List<Record> examRecords = subjectService.getRecords(userId, subject);
+		List<Record> rankRecords = subjectService.getRank(subject);
+		for (int i = 0; i < rankRecords.size(); i++) {
+			Record record = rankRecords.get(i);
+			record.setNickName(userService.getUserByUserId(record.getUserId()).getNickName());
+		}
 		model.put("subject", subject);
 		model.put("examRecords", examRecords);
+		model.put("rankRecords", rankRecords);
 		return "record";
 	}
 

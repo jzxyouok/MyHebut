@@ -116,7 +116,7 @@ public class IndexController {
 	public String addUser(@RequestBody User user, HttpServletRequest request) {
 		JsonResult jsonResult = new JsonResult();
 		// 昵称默认为登录用户名
-		user.setNickName("(请设置昵称)");
+		user.setNickName(user.getUserName());
 		// 设置创建时间
 		String create_time = TimeUtil.getDate();
 		user.setCreate_time(create_time);

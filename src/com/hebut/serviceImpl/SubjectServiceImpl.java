@@ -163,4 +163,10 @@ public class SubjectServiceImpl implements SubjectService {
 	public void deletePraticeNote(int userId, int questionId) {
 		noteDao.deleteNoteByQuestionId(userId, questionId);
 	}
+	
+	@Override
+	public List<Record> getRank(String subject) {
+		List<Record> records = recordDao.selectRank(subject);
+		return records;
+	}
 }

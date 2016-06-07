@@ -77,11 +77,11 @@
 							<c:if test="${subject == 1}">毛概(上)</c:if>
 							<c:if test="${subject == 2}">毛概(下)</c:if>
 							<c:if test="${subject == 3}">史纲</c:if></a></li>
-							<li class="active"><i class="fa fa-tags"></i>考试记录</li>
+							<li class="active"><i class="fa fa-tags"></i>排行榜</li>
 						</ol>
 					</div>
 					<div class="pull-right">
-						<h2>考试记录</h2>
+						<h2>排行榜</h2>
 					</div>
 				</div>
 				<!-- End: Page Header -->
@@ -94,15 +94,68 @@
 									<h6 style="line-height:23px">
 										<i class="fa fa-table red"></i>
 										<span class="break"></span>
-										${subject}考试记录(5分以下的成绩被视为无效成绩,系统将不进行记录)
+										排行榜
 									</h6>
+									<div class="panel-actions">
+										<a href="#" class="btn-minimize control_panel_single"><i
+											class="fa fa-chevron-up"></i></a>
+									</div>
 								</div>										
 								<div class="panel-body">
 									<div class="table-responsive">
 										<table class="table table-hover">
 											<thead>
 												<tr>
-													<th class="mobile_hide">用户名</th>
+													<th>用户昵称</th>
+													<th>考试耗时</th>
+													<th>成绩</th>
+													<th class="mobile_hide">得分率&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+													<th class="mobile_hide">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+													<th>名次</th>
+												</tr>
+											</thead>
+											<tbody>
+												<c:forEach var="record" items="${rankRecords}" varStatus="status">
+												<tr>
+													<td>${record.nickName}</td>
+													<td>${record.last_time}</td>
+													<td>${record.score}</td>
+													<td class="mobile_hide">
+														<div class="progress">
+															<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45"  style="width: ${record.percent};">
+																${record.percent}
+															</div>
+														</div>
+													</td>
+													<td class="mobile_hide"></td>
+													<td>	
+														${status.count}
+													</td>
+												</tr>	
+												</c:forEach>																
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div> 
+							<div class="panel">                                
+								<div class="panel-heading bk-bg-primary">
+									<h6 style="line-height:23px">
+										<i class="fa fa-table red"></i>
+										<span class="break"></span>
+										我的考试记录(5分以下的成绩被视为无效成绩,系统将不进行记录)
+									</h6>
+									<div class="panel-actions">
+										<a href="#" class="btn-minimize control_panel_single"><i
+											class="fa fa-chevron-up"></i></a>
+									</div>
+								</div>										
+								<div class="panel-body">
+									<div class="table-responsive">
+										<table class="table table-hover">
+											<thead>
+												<tr>
+													<th class="mobile_hide">用户昵称</th>
 													<th>考试时间</th>
 													<th>考试耗时</th>
 													<th>成绩</th>
@@ -114,7 +167,7 @@
 											<tbody>
 												<c:forEach var="record" items="${examRecords}" varStatus="status">
 												<tr>
-													<td class="mobile_hide">${loginedUser.userName}</td>
+													<td class="mobile_hide">${loginedUser.nickName}</td>
 													<td>${record.begin_time}</td>
 													<td>${record.last_time}</td>
 													<td>${record.score}</td>
@@ -141,7 +194,7 @@
 										</table>
 									</div>
 								</div>
-							</div>                 
+							</div>                
 						</div>					
 					</div>	
 				</div>

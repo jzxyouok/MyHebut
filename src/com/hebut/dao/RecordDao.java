@@ -20,5 +20,10 @@ public interface RecordDao {
 	 * 删除考试记录
 	 */
 	public void deleteRecord(int recordId);
+	
+	/**
+	 * 获取考试排行榜
+	 */
+	public List<Record> selectRank(String subject);
 
 }

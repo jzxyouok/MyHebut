@@ -32,7 +32,12 @@ public class BoardServiceImpl implements BillboardService {
 
 	@Override
 	public Billboard getBoardDetail(int boardId) {
-		Billboard billboard = boardDao.selectBoardByBoardId(boardId);		
+		Billboard billboard = boardDao.selectBoardByBoardId(boardId);
+		String create_time = billboard.getCreate_time();
+		// 截去最后面的两个字符
+		create_time = create_time.substring(0, create_time.length() - 2);
+		// 重新设置
+		billboard.setCreate_time(create_time);
 		return billboard;
 	}
 
@@ -42,5 +47,5 @@ public class BoardServiceImpl implements BillboardService {
 		TimeUtil.setBoardDate(boards);
 		return boards;
 	}
-	
+
 }

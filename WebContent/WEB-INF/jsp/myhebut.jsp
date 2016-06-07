@@ -107,13 +107,13 @@
 							<div class="advertise">
 								<div class="row" >
 									<div class="col-sm-6 col-xs-12 xs-center">
-										<a class="myhebut-btn" href="http://myhebut.oss-cn-hangzhou.aliyuncs.com/download%2FMyHebut-1.2.apk" target="_blank"> <i class="fa fa-android fa-lg"></i>
+										<a class="myhebut-btn" href="http://myhebut.oss-cn-hangzhou.aliyuncs.com/download%2FMyHebut-1.3.apk" target="_blank"> <i class="fa fa-android fa-lg"></i>
 											&nbsp;&nbsp;Android版下载
 										</a>
 									</div>
 									<div class="col-sm-6 col-xs-12 xs-center xs-hide">
 										<p>
-											<a class="myhebut-btn" id="show-code" href="javascript:;" rel="${basePath}/img/code.png">
+											<a class="myhebut-btn" id="show-code" href="javascript:;" rel="${basePath}/img/code-1.3.png">
 												<i class="fa fa-qrcode fa-lg"></i>
 												&nbsp;&nbsp;扫码下载
 											</a>

@@ -89,5 +89,10 @@ public interface SubjectService {
 	 * 搜索功能(多选)
 	 */
 	public List<Question> getMultipleQuestionByKeyword(String keyword, String subject);
+	
+	/**
+	 * 获取排行榜
+	 */
+	public List<Record> getRank(String subject);
 
 }

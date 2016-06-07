@@ -10,6 +10,9 @@ public class Record {
 
 	/** 考试记录绑定的用户Id */
 	private int userId;
+	
+	/** 考试记录绑定的用户昵称 */
+	private String nickName;
 
 	/** 考试开始时间 */
 	private String begin_time;
@@ -48,6 +51,14 @@ public class Record {
 
 	public void setUserId(int userId) {
 		this.userId = userId;
+	}
+
+	public String getNickName() {
+		return nickName;
+	}
+
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
 	}
 
 	public String getBegin_time() {

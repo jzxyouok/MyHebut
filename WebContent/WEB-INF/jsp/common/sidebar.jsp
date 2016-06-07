@@ -63,7 +63,7 @@
 										</li>
 										<li>
 											<a href="/record?subject=0">
-												<span class="text">考试记录</span>
+												<span class="text">排行榜</span>
 											</a>
 										</li>									
 									</ul>
@@ -101,7 +101,7 @@
 										</li>
 										<li>
 											<a href="/record?subject=1">
-												<span class="text">考试记录</span>
+												<span class="text">排行榜</span>
 											</a>
 										</li>									
 									</ul>
@@ -139,7 +139,7 @@
 										</li>
 										<li>
 											<a href="/record?subject=2">
-												<span class="text">考试记录</span>
+												<span class="text">排行榜</span>
 											</a>
 										</li>									
 									</ul>
@@ -177,7 +177,7 @@
 										</li>
 										<li>
 											<a href="/record?subject=3">
-												<span class="text">考试记录</span>
+												<span class="text">排行榜</span>
 											</a>
 										</li>									
 									</ul>

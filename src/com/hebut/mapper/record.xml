@@ -25,5 +25,14 @@
 	<delete id="deleteRecord" parameterType="int">
 		delete from record where recordId = #{recordId}
 	</delete>
+	
+	<select id="selectRank" resultMap="resultListExamRecord">
+		select *
+		from (select * from
+		record where subject = #{subject} order by
+		score desc)
+		`temp` group by
+		userId order by score desc , seconds limit 0, 20;
+	</select>
 
 </mapper>
