@@ -77,7 +77,6 @@
 												</li>
 											</ul>
 										</div>
-
 									</div>
 								</nav>
 							</div>
@@ -88,7 +87,7 @@
 			</div>
 		</header>
 		<div class="container">
-			<div  style="text-align: center;">
+			<div class="slogan">
 				<h4 style="line-height: 22px;font-weight: 500">
 					大家共同学习，共同进步，
 					<span>期待您与悦河工一起变得更好</span>
