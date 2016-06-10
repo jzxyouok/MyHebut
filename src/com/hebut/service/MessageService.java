@@ -9,7 +9,7 @@ public interface MessageService {
 	/**
 	 * 添加留言
 	 */
-	public void addMessage(int userId, String content, String reply, String create_time);
+	public void addMessage(int userId, String content, String create_time);
 	
 	/**
 	 * 添加回复
@@ -26,4 +26,9 @@ public interface MessageService {
 	 */
 	public List<Message> getMessagesByUserId(int userId);
 	
+	/**
+	 * 邮件题型管理员有新留言
+	 */
+	public void sendEmail(int userId, String email, String content);
+
 }

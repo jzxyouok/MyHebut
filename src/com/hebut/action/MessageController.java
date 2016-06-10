@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.hebut.entity.Message;
+import com.hebut.entity.User;
 import com.hebut.service.MessageService;
 import com.hebut.service.UserService;
 import com.hebut.util.TimeUtil;
@@ -42,9 +43,12 @@ public class MessageController {
 	public String addMessage(HttpServletRequest request, Map<String, Object> model) {
 		int userId = userService.getUserId(request);
 		String content = request.getParameter("content");
-		String reply = "";
 		String create_time = TimeUtil.getDate();
-		messageService.addMessage(userId, content, reply, create_time);
+		// 添加留言
+		messageService.addMessage(userId, content, create_time);
+		// 将留言情况发送给管理员
+		User user = userService.getUserByUserId(userId);
+		messageService.sendEmail(userId, user.getEmail(), content);
 		// 重新返回留言界面
 		List<Message> messages = messageService.getMessagesByUserId(userId);
 		model.put("messages", messages);
